@@ -141,8 +141,8 @@ end
 
 def team_colors(team_name)
   hash = game_hash
-  hash.each do |location, info| 
-      if info.include?(team_name) 
+  hash.each do |location, colors| 
+      if colors.include?(team_name) 
        return hash[location][:colors]
       end
     end
