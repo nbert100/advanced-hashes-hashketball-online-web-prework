@@ -118,8 +118,8 @@ def game_hash
 end
 
 def num_points_scored(players_name)
-  hash.map do |location, info|
-    info.map do |players, points|
+  hash.each do |location, info|
+    info.each do |players, points|
    puts points.value
       end
     end
