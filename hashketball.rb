@@ -120,8 +120,7 @@ end
 def num_points_scored(players_name)
   hash.map do |location, info|
     info.map do |players, points|
-      if items.include?("BBQ")
-        holiday
+   puts points.value
       end
     end
   end.flatten.compact
