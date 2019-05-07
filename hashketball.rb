@@ -118,11 +118,14 @@ def game_hash
 end
 
 def num_points_scored(players_name)
-  hash.each do |home_away, players| 
-    puts [:]
-    
-
-
+  hash.map do |location, info|
+    info.map do |players, points|
+      if items.include?("BBQ")
+        holiday
+      end
+    end
+  end.flatten.compact
+end
 
 
 
